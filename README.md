@@ -1,9 +1,9 @@
 # BigCommerce OAuth for Laravel
 
 <p align="center">
-  <img src="assets/cronix-logo.svg" alt="Cronix" height="48" />
+  <img src="assets/cronix-logo.svg" alt="Cronix" style="height: 60px !important;" />
   <span>&nbsp;&nbsp;×&nbsp;&nbsp;</span>
-  <img src="assets/bigcommerce-logo.svg" alt="BigCommerce" height="48" />
+  <img src="assets/bigcommerce-logo.svg" alt="BigCommerce" style="height: 72px !important;" />
 </p>
 
 A lightweight, drop‑in Laravel package that implements the full BigCommerce OAuth flow (install, load, uninstall, remove user). Designed to work in small apps and large, complex, multi‑tenant systems alike.
