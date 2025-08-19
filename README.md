@@ -1,6 +1,14 @@
 # BigCommerce OAuth for Laravel
 
+<p align="center">
+  <img src="assets/cronix-logo.svg" alt="Cronix" height="48" />
+  <span>&nbsp;&nbsp;×&nbsp;&nbsp;</span>
+  <img src="assets/bigcommerce-logo.svg" alt="BigCommerce" height="48" />
+</p>
+
 A lightweight, drop‑in Laravel package that implements the full BigCommerce OAuth flow (install, load, uninstall, remove user). Designed to work in small apps and large, complex, multi‑tenant systems alike.
+
+Official docs: https://developer.cronixweb.com/docs/bigcommerce/bigcommerce-oauth-laravel
 
 ## Features
 - Install, Load, Uninstall, Remove User routes ready to use.
@@ -53,6 +61,8 @@ In the BigCommerce Developer Portal, set your app callback URLs to your app doma
 - Uninstall Callback URL: `https://your-app.com/auth/uninstall`
 - Remove User Callback URL: `https://your-app.com/auth/remove_user`
 
+For an end‑to‑end setup guide and screenshots, see the official documentation: https://developer.cronixweb.com/docs/bigcommerce/bigcommerce-oauth-laravel
+
 ## Database
 Published migrations create:
 - `stores` (id, hash, access_token, timestamps, softDeletes)
@@ -95,6 +105,13 @@ Advanced: You can override how the access token is resolved or how the current s
 - Keep `BC_CLIENT_ID` and `BC_SECRET` in env; never commit secrets.
 - Production requests verify TLS by default; development uses `Http::withoutVerifying()`.
 - Treat `stores.access_token` as sensitive; avoid logging.
+
+## Logos
+Place logo assets at:
+- `assets/cronix-logo.png`
+- `assets/bigcommerce-logo.png`
+
+The README header references these paths to showcase the partnership branding.
 
 ## Contributing
 We follow Conventional Commits (e.g., `feat:`, `fix:`, `refactor:`). Please include a clear description, note schema/config changes, and add tests where possible. Open issues or PRs are welcome.
